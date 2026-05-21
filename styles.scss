@@ -1,0 +1,106 @@
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$grey500: hsl(234, 12%, 34%);
+$grey400: hsl(212, 6%, 44%);
+$white: hsl(0, 0%, 100%);
+$paragraph: 15px;
+$light: 200;
+$normal: 400;
+$bold: 600;
+$poppins: 'Poppins', sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    min-height: 100vh;
+    font-family: $poppins;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        gap: 1.3rem;
+        max-width: 30rem;
+        padding: 1.3rem;
+
+        .card-intro{
+            text-align: center;
+
+            h1{
+                color: $grey500;
+                font-weight: $light;
+                margin-bottom: 1.5rem;
+            }
+
+            span{
+                font-weight: $bold;
+            }
+
+            p{
+                color: $grey400;
+                font-size: $paragraph;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            .card{
+                box-shadow: 0rem 0.8rem 0.9rem rgba(0, 0, 0, 0.1);
+                padding: 2rem;
+                border-radius: 0 0 0.5rem 0.5rem;
+
+                .card-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.3rem;
+
+                    h2{
+                        color: $grey500;
+                    }
+
+                    p{
+                        color: $grey400;
+                        font-size: $paragraph;
+                        font-weight: $normal;
+                    }
+
+                    img{
+                        width: 4rem;
+                        align-self: flex-end;
+                    }
+                }
+            }
+
+            .card-1{
+                border-top: 4px solid $cyan;
+            }
+
+            .card-2{
+                border-top: 4px solid $red;
+            }
+
+            .card-3{
+                border-top: 4px solid $orange;
+            }
+
+            .card-4{
+                border-top: 4px solid $blue;
+            }
+        }
+    }
+}
